@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Data Marker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/ripple.css">
+  <script src="lib/fabric.min.js"></script>
+  <script src="lib/jquery-3.6.0.js"></script>
+  <script src="lib/mSnackbar.js"></script>
+  <script src="lib/dataAnnotator.js"></script>
+</head>
+
+<body>
+  <span id="image-annotator" class="material-shadow">
+    <img src="img/example.jpg" id="image-being-annotated">
+    <div id="image-annotator-canvas-wrapper">
+      <canvas id="image-annotator-canvas"></canvas>
+    </div>
+  </span>
+  <span id="annotator-control-panel">
+    <input type="radio" id="data-select-mode" value="3" name="data-mode" checked="checked">
+    <label for="data-select-mode" class="ripple">Select</label>
+    <input type="radio" id="data-pen-mode" value="1" name="data-mode">
+    <label for="data-pen-mode" class="ripple">Pen</label>
+    <input type="radio" id="data-rectangle-mode" value="2" name="data-mode">
+    <label for="data-rectangle-mode" class="ripple">Rectangle</label>
+    <input type="radio" id="data-polygon-mode" value="0" name="data-mode">
+    <label for="data-polygon-mode" class="ripple">Polygon</label>
+    <button id="submit-button"></button>
+    <label for="submit-button" class="ripple">Submit</label>
+  </span>
+</body>
+
+</html>
