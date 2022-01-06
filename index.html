@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <span id="image-annotator" class="material-shadow">
+  <span id="image-annotator" class="material-shadow" oncontextmenu="return false;">
     <img src="img/example.jpg" id="image-being-annotated">
     <div id="image-annotator-canvas-wrapper">
       <canvas id="image-annotator-canvas"></canvas>
@@ -26,6 +26,8 @@
     <label for="data-select-mode" class="ripple">Select</label>
     <input type="radio" id="data-pen-mode" value="1" name="data-mode">
     <label for="data-pen-mode" class="ripple">Pen</label>
+    <!-- <input type="radio" id="data-eraser-mode" value="4" name="data-mode">
+    <label for="data-eraser-mode" class="ripple">Eraser</label> -->
     <input type="radio" id="data-rectangle-mode" value="2" name="data-mode">
     <label for="data-rectangle-mode" class="ripple">Rectangle</label>
     <input type="radio" id="data-polygon-mode" value="0" name="data-mode">
