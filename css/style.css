@@ -37,10 +37,6 @@ body {
   flex-flow: column wrap;
   align-items: baseline;
   flex-grow: 1;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
 }
 #annotator-control-panel > button {
   display: none;
